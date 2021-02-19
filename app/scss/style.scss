@@ -1,0 +1,153 @@
+// 500 and 900
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500;900&display=swap");
+$font-family: "Roboto", sans-serif;
+// FIELD
+$field: rgb(219, 235, 235);
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-image: url(/assets/img/hills.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  background-position: center;
+  min-height: 100vh;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(700px, 1fr));
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.message__image {
+  padding-left: 100px;
+  .message__svg {
+    display: block;
+    justify-self: center;
+    align-self: center;
+    width: 500px;
+  }
+}
+
+.form {
+  display: inline-flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 0 150px 100px 0;
+}
+
+.form__title {
+  font-family: $font-family;
+  font-weight: 900;
+  // font-size: 20px;
+  text-align: center;
+}
+
+.title__span {
+  display: block;
+  font-family: $font-family;
+  font-weight: 900;
+  text-align: center;
+  margin: 0;
+}
+
+.form__name {
+  display: block;
+  justify-self: center;
+  align-self: center;
+  font-family: $font-family;
+  font-weight: 500;
+  .name {
+    background: $field;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    width: 500px;
+    height: 50px;
+    &::placeholder {
+      padding: 10px 0 0 10px;
+      text-align: center;
+    }
+  }
+}
+
+.form__email {
+  display: block;
+  justify-self: center;
+  align-self: center;
+  font-family: $font-family;
+  margin-top: 10px;
+  .email {
+    background: $field;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    width: 500px;
+    height: 50px;
+    &::placeholder {
+      padding: 10px 0 0 10px;
+      text-align: center;
+    }
+  }
+}
+
+.form__message {
+  display: block;
+  align-self: center;
+  font-family: $font-family;
+  margin-top: 10px;
+  .textarea {
+    background: $field;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    width: 500px;
+    resize: none;
+    &::placeholder {
+      padding: 10px 0 0 10px;
+      text-align: center;
+    }
+  }
+}
+
+.form__btn {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  font-family: $font-family;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.btn__send {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  width: 100%;
+  padding: 10px 0;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+  background-color: rgb(98, 219, 219);
+  &:hover{
+    outline: none;
+    background-color: rgb(99, 240, 240);
+    transform: scale(.99);
+    transform: .2s;
+    // transition: all .2s ease-in-out;
+  }
+}

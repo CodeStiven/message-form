@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leave Your Message!</title>
+    <!-- NORMALIZE -->
+    <link rel="stylesheet" href="/dist/normalize.css" />
+    <!-- STYLES -->
+    <link rel="stylesheet" href="/dist/style.css" />
+    <!-- FAVICON -->
+    <link
+      rel="shortcut icon"
+      href="/assets/img/favicon.ico"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <main class="container">
+      <div class="message__image">
+        <img
+          src="/assets/img/undraw_message_sent_1030.svg"
+          alt="Image Message"
+          class="message__svg"
+        />
+      </div>
+      <form action="" method="" class="form">
+        <h1 class="form__title">
+          <span class="title__span">Hello!</span> <br />
+          Leaver yout message.
+        </h1>
+        <div class="form__name">
+          <!-- <label for="name">Name</label> -->
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="name"
+            placeholder="Name"
+            required
+            autocomplete="off"
+            autofocus
+            />
+            <!-- autofocus -->
+        </div>
+        <div class="form__email">
+          <!-- <label for="email">Email</label> -->
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="email"
+            placeholder="Email"
+            required
+            autocomplete="off"
+          />
+        </div>
+        <div class="form__message">
+          <!-- <label for="message"></label> -->
+          <textarea
+            name="message"
+            id="message"
+            class="textarea"
+            cols="30"
+            rows="10"
+            placeholder="Message"
+            required
+          ></textarea>
+        </div>
+        <div class="form__btn">
+          <button class="btn__send" value="send">Send</button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
